@@ -2,7 +2,7 @@
 Gitlab Project Content Parser
 
 #usage
-pip install requirements.txt
+pip install -r requirements.txt
 
 create .env file with content:
 
