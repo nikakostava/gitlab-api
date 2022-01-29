@@ -2,7 +2,9 @@ import csv
 import sys
 import utils
 import os
+import dotenv
 
+dotenv.load_dotenv()
 
 def export_to_csv(src, dst):
     # Store final result List of Lists
@@ -31,5 +33,7 @@ def export_to_csv(src, dst):
 
 
 if __name__ == "__main__":
+    if "export" not in os.listdir():
+        os.mkdir("export")
     export_to_csv(".gitlab-ci.yml", "export\\ymlContent.csv")
 
