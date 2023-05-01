@@ -46,15 +46,3 @@ The `export_to_csv` function loops through all GitLab projects, gets the content
 
 The script also uses the `dotenv` library to load environment variables from the `.env` file.
 
-
-# gitlab-api
-Gitlab Project Content Parser
-
-# usage
-pip install -r requirements.txt
-
-create .env file with content:
-
-GITLAB_URL=https://gitlab.example.com
-
-GITLAB_TOKEN=Your Token
